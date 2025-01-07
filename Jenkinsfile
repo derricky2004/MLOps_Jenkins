@@ -7,7 +7,7 @@ pipeline {
                     [key: 'WEBHOOK_TRIGGER', value: '$.trigger', defaultValue: '']
                 ],
                 causeString: 'Triggered by webhook',
-                token: 'push',
+                token: 'dodat',
                 printContributedVariables: true,
                 printPostContent: true
             )
@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/leo2607-tl/MLOps_Jenkins.git'
+                git branch: 'main', url: 'https://github.com/derricky2004/MLOps_Jenkins.git'
             }
         }
         stage('Run FastAPI Application') {
