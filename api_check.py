@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request
 import uvicorn
 
 app = FastAPI()
-#hihi
+#hihi_test
 @app.get("/version")
 def get_version():
     return {"version": "1.0.0"}
