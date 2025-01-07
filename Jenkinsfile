@@ -44,7 +44,7 @@ pipeline {
                         docker build -t api .
 
                         echo "Running the Docker container..."
-                        docker run --name api_running -p 8000:8000 -d api
+                        docker run --name api_running -p 8001:8001 -d api
                         '''
 
                         withChecks('Run FastAPI App') {
